@@ -167,6 +167,22 @@ header {
     background-color: #f0eaea50;
     backdrop-filter: blur(2px);
     border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.dish-item.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .dish-item img {
@@ -243,6 +259,22 @@ header {
     justify-content: space-between;
     padding: 10px;
     gap: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.images.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .images img {
@@ -263,6 +295,22 @@ header {
     flex: 1;
     padding: 10px;
     font-weight: bold;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.content.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .content h2 {
@@ -343,6 +391,22 @@ header {
 
 .stat-item {
     margin: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.stat-item.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .stat-item h3 {
@@ -362,6 +426,22 @@ header {
     flex: 1;
     padding: 10px;
     max-width: 300px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.description.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .description p {
@@ -436,7 +516,23 @@ header {
     margin: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.service-item.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .service-item img {
@@ -945,6 +1041,22 @@ header {
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.post.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .post-img {
