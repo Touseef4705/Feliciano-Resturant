@@ -517,6 +517,22 @@ header {
     border-radius: 3px;
     overflow: hidden;
     width: 450px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease;
+}
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.menu-item.visible {
+    animation: fadeInUp 1s ease forwards; /* Apply the animation */
 }
 
 .menu-item img {

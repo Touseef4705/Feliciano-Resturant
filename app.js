@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updateCount();
   });
 
-  const sections = document.querySelectorAll('.services-section, .about-section, .stats-section, .testimonial-section, .blog-section, .footer-container, .dishes-container, .menu-section, .chef-section, .reservation-section');
+  const sections = document.querySelectorAll('.services-section, .about-section, .stats-section, .testimonial-section, .blog-section, .footer-container, .dishes-container, .menu-item, .menu-section, .chef-section, .reservation-section');
 
   const options = {
       threshold: 0.1
