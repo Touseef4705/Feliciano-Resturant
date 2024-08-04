@@ -15,11 +15,13 @@ body {
     width: 100%;
     font-weight: 400;
 }
+
 .mb-navbar-nav{
     width: 100%;
     line-height: 50px;
     margin-left: 50px;
     /* background-color: #c49b63; */
+    list-style-type: none;
 }
 .mb-navbar-nav li{
     width: 100%;
@@ -53,6 +55,7 @@ body {
     z-index: 2;
     border-bottom: 1px solid rgba(255, 255, 255, 0.267);
     background-color: #00000056;
+   
 }
 .carousel-item{
     /* background-image: url('your-image-url.jpg'); */
